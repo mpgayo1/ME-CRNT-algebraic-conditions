@@ -1,0 +1,103 @@
+The weakly reversible PL-NDK realization is transformed into a weakly reversible PL-RDK realization using Procedure 1 of Talabis et al. (2024). After Procedure 1, the novel malaria realization has $n=20$ complexes, $l=7$ linkage classes, stoichiometric rank $s=8$, and kinetic-order subspace dimension $\widetilde{s}=7$, giving the deficiency $\delta=n-l-s=20-7-8=5$ and the kinetic deficiency $\widetilde{\delta}=n-l-\widetilde{s}=20-7-7=6$.
+
+Since $\widetilde{\delta}=6>0$, the monomial parametrization is valid only when the parameter values satisfy the required algebraic conditions.
+
+## Algebraic Conditions
+
+The required algebraic conditions are
+
+```math
+\frac{\lambda}{3}=\beta_3.
+```
+
+```math
+\frac{\lambda}{3}=\frac{\mu_b}{2}.
+```
+
+```math
+\gamma_{i_{1_A}}\left(\frac{\mu_b}{2}\right)
+=
+\gamma_{i_{1_B}}\left(\frac{\lambda}{3}\right).
+```
+
+```math
+\frac{\lambda}{3}=\mu_a.
+```
+
+```math
+\gamma_{t_1}=\beta_1.
+```
+
+```math
+\gamma_{t_{3_A}}\gamma_{e_A}
+=
+\gamma_{e_B}\gamma_{t_1}.
+```
+
+## Verification
+
+If at least one algebraic condition is not satisfied, the monomial parametrization is not valid for that parameter set.
+
+For the parameter values from Adegbite et al. (2023), the algebraic conditions are not satisfied, both for the low-rainfall and heavy-rainfall cases. Therefore, for those parameter values, the monomial parametrization cannot be used to conclude ACR and BCR.
+
+However, this does not mean that the monomial parametrization is incorrect. It only means that the chosen parameter values do not satisfy the required algebraic conditions. For parameter values satisfying all algebraic conditions, the monomial parametrization becomes valid.
+
+## Valid Monomial Parametrization
+
+For parameter values satisfying all required algebraic conditions, the valid monomial parametrization is
+
+```math
+T^*=
+\frac{\gamma_{t_1}\gamma_{i_{2_B}}\left(\frac{\mu_b}{2}\right)}
+{\gamma_{t_{3_B}}\gamma_{i_{2_A}}\left(\frac{\lambda}{3}\right)}.
+```
+
+```math
+S^*=
+\frac{\gamma_{e_A}\gamma_{i_{2_B}}\left(\frac{\lambda}{3}\right)\left(\frac{\mu_b}{2}\right)}
+{\gamma_{t_{3_B}}\gamma_{i_{2_A}}\beta_2\left(\frac{\lambda}{3}\right)}.
+```
+
+```math
+E^*=
+\frac{\gamma_{t_1}\gamma_{i_{2_B}}}
+{\gamma_{t_{3_B}}\gamma_{i_{2_A}}}.
+```
+
+```math
+I^*=
+\frac{\gamma_{i_{2_B}}(\gamma_{t_{2_A}}+\gamma_{t_{3_A}})}
+{\gamma_{t_{2_B}}\gamma_{i_{2_A}}}.
+```
+
+```math
+R^*=\xi_1.
+```
+
+```math
+D^*=\xi_2.
+```
+
+```math
+V^*=
+\frac{\gamma_{e_A}(\gamma_{s_1}+\gamma_{s_2}+\gamma_{s_3})\gamma_{i_{2_B}}\left(\frac{\lambda}{3}\right)\left(\frac{\mu_b}{2}\right)}
+{\gamma_{t_{3_B}}\gamma_v\gamma_{i_{2_A}}\left(\frac{\lambda}{3}\right)}.
+```
+
+```math
+A^*=
+\frac{\gamma_{i_{2_A}}}{\gamma_{i_{2_B}}}.
+```
+
+```math
+B^*=
+\frac{\gamma_{t_1}}{\gamma_{e_A}}.
+```
+
+## BCR and ACR Interpretation
+
+Under these algebraic conditions, the compartments $T$, $S$, $E$, $I$, $V$, $A$, and $B$ exhibit balanced concentration robustness (BCR), since their steady-state values contain no free parameters.
+
+The compartments $R$ and $D$ do not exhibit BCR, since their steady-state values depend on the free parameters $\xi_1$ and $\xi_2$, respectively.
+
+However, since $\delta=5>0$, absolute concentration robustness (ACR) cannot be concluded from the monomial parametrization alone.
