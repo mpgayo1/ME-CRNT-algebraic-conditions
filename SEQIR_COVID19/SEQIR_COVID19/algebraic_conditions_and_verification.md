@@ -28,12 +28,6 @@ The required algebraic conditions are
 (\gamma_{q_1}+\gamma_{q_2})(\mu_s+\gamma_{s_2}+\gamma_{s_1}).
 ```
 
-where
-
-```math
-\mu_i=\mu_{i_1}+\mu_{i_2}.
-```
-
 ## Verification
 
 If at least one algebraic condition is not satisfied, the monomial parametrization is not valid for that parameter set.
