@@ -29,6 +29,7 @@ The required algebraic conditions are
 ```
 
 ## Verification
+The algebraic conditions are verified by directly substituting the given parameter values into the left-hand side and right-hand side of each condition. A condition is satisfied only when both sides are equal.
 
 If at least one algebraic condition is not satisfied, the monomial parametrization is not valid for that parameter set.
 
